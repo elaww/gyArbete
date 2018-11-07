@@ -1,0 +1,25 @@
+#frame {
+    margin: 0px auto;
+    width: 960px;
+    height: 540px;
+    border: 10px #333 solid;
+}
+
+#videoElement {
+    width: 960px;
+    height: 540px;
+    background-color: #666;
+
+}
+
+h1{
+    font-size: 3em;
+    text-align: center;
+}
+
+p{
+    font-size: 1em;
+    text-align: center;
+}
+
+
