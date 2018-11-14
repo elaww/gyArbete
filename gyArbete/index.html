@@ -4,21 +4,33 @@
     <meta charset="utf-8">
     <meta name="Webcam Surveillance Website" content="record yourself">
     <link rel="stylesheet" href="style.css">
-    <title></title>
+    <link rel="stylesheet" href="button.scss">
+    <title> Record Yourself</title>
+
   </head>
 
-  <body>
+  <body onload="init();">
     <h1>Welcome to WSW</h1>
     <p>This is a webcam surveillance website where you can watch and record yourself by clicking that big button.</p>
     <p>You can take snapshots, save the whole recording or delete is as well.</p>
-    <button type="button" name="start">Start Webcam</button>
-    <button type="button" name="reset">Reset</button>
+
 
     <div id="frame">
-      <video aoutoplay="true" id="videoElement"></video>
+      <video autoplay="true" id="videoElement"></video>
     </div>
 
+
+    <div class="knapp">
+     <input type="button" value="Start Webcam" id="ela" name="start" onclick="startCam();">
+     <input type="button" value="Take Snapshot" name="snapshot" onclick="takeSnapshot();">
+     <input type="button" value="Reset" name="reset" onclick="reset();">
+    </div>
+
+
+    <canvas id="canvas" width="800" height="600">
+  </canvas>
     <script src="script.js"></script>
+
 
   </body>
 </html>

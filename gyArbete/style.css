@@ -1,13 +1,17 @@
+body{
+    display: block;
+}
+
 #frame {
     margin: 0px auto;
-    width: 960px;
-    height: 540px;
+    width: 800px;
+    height: 600px;
     border: 10px #333 solid;
 }
 
 #videoElement {
-    width: 960px;
-    height: 540px;
+    width: 800px;
+    height: 600px;
     background-color: #666;
 
 }
@@ -22,4 +26,34 @@ p{
     text-align: center;
 }
 
+.knapp{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
+input, button{
+    background: blue;
+    border-radius: 3px;
+    transition: transform 3ms ease;
+}
+
+input:active, button:active{
+  transform: scale(1.2);
+  transform: translateX(-15%) translateY(-15%);}
+
+input:hover, button:hover{
+  cursor: pointer;
+}
+
+&:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    border-radius: 50%;
+    background-color: darken(#f1c40f, 20%);
+    opacity: 0.4;
+    bottom: -30px;
+  }
