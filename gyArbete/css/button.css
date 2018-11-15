@@ -1,0 +1,72 @@
+body {
+  display: block;
+}
+
+#frame {
+  margin: 0px auto;
+  width: 800px;
+  height: 600px;
+  border: 10px #333 solid;
+}
+
+#videoElement {
+  width: 800px;
+  height: 600px;
+  background-color: #666;
+}
+
+h1 {
+  font-size: 3em;
+  text-align: center;
+}
+
+p {
+  font-size: 1em;
+  text-align: center;
+}
+
+.knapp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+input, button {
+  background: blue;
+  border-radius: 3px;
+  -webkit-transition: -webkit-transform 3ms ease;
+  transition: -webkit-transform 3ms ease;
+  transition: transform 3ms ease;
+  transition: transform 3ms ease, -webkit-transform 3ms ease;
+}
+
+input:active, button:active {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transform: translateX(5%) translateY(-5%);
+          transform: translateX(5%) translateY(-5%);
+}
+
+input:hover, button:hover {
+  cursor: pointer;
+}
+
+/* &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    border-radius: 50%;
+    background-color: darken(#f1c40f, 20%);
+    opacity: 0.4;
+    bottom: -30px;
+  } 
+/*# sourceMappingURL=button.css.map */
