@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr"> <!-- save all vids to a database -->
   <head>
     <meta charset="utf-8">
     <meta name="Webcam Surveillance Website" content="record yourself">
@@ -8,10 +8,12 @@
 
   </head>
 
-  <body onload="init();">
+  
+
+  <body class="v" onload="init();">
     <h1>Welcome to WSW</h1>
     <p>This is a webcam surveillance website where you can watch and record yourself by clicking that big button.</p>
-    <p>You can take snapshots, save the whole recording or delete is as well.</p>
+    <p>You can take snapshots, save the whole recording and delete them as well.</p>
 
 
     <div id="frame">
@@ -19,17 +21,49 @@
     </div>
 
 
-    <div class="knapp">
-     <input type="button" value="Start Webcam" id="ela" name="start" onclick="startCam();">
-     <input type="button" value="Take Snapshot" name="snapshot" onclick="takeSnapshot();">
-     <input type="button" value="Reset" name="reset" onclick="reset();">
+    <!-- <div class="knapp">
+     <input type="button" value="Start Webcam" id="start" name="start" onclick="startCam();">
+     <input type="button" value="Take Snapshot" id="snapshot" name="snapshot" onclick="takeSnapshot();">
+     <input type="button" value="Reset" id="reset" name="reset" onclick="reset();">
+    </div>
+ -->
+    <div class="button">
+      <button type="button" value="Start Webcam" onclick="startCam();" style="background-color:#3498db;">Start Webcam</button>
+        <button type="button" value="Take Snapshot" onclick="takeSnapshot();" style="background-color:#3498db;">Take Snapshot</button>
+        <button type="reset" value="Reset" onclick="reset();" style="background-color:#3498db;">Reset</button>
     </div>
 
-
+    
+    
+  </div>
     <canvas id="canvas" width="800" height="600">
   </canvas>
-    <script src="script.js"></script>
 
+  <div class="bArea">
+      <ul class="circles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+  </ul>
+
+    <script src="script.js"></script>
 
   </body>
 </html>
